@@ -38,7 +38,7 @@ namespace App2
             DateTime baseTime = DateTime.Parse(this.maskedTextBox_baseTime.Text);
             DateTime scheduleTime = cron.GetNextScheduledTime(baseTime);
             this.richTextBox1.Text += "\r\nCron: " + cron.Schedule 
-                + "\r\nBase: " + baseTime.ToString("dd/MM/yyyy HH:mm:ss") 
+                + "\r\nCurrent Time: " + baseTime.ToString("dd/MM/yyyy HH:mm:ss") 
                 + "\r\nSchedule Time: " + scheduleTime.ToString("dd/MM/yyyy HH:mm:ss") 
                 + "\r\n---------------------------";
 

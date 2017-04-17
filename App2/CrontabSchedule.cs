@@ -127,10 +127,10 @@ namespace App2
                     {
                         if (aTime.Minute < int.Parse(expr))
                         {
-                            return new DateTime(aTime.Year, aTime.Month, aTime.Day, aTime.Hour, int.Parse(expr), 0);
+                            return new DateTime(aTime.Year, aTime.Month, aTime.Day, aTime.Hour, int.Parse(expr), aTime.Second);
                         }
                     }
-                    return new DateTime(aTime.Year, aTime.Month, aTime.Day, aTime.Hour, int.Parse(expressions[0]), 0);
+                    return new DateTime(aTime.Year, aTime.Month, aTime.Day, aTime.Hour, int.Parse(expressions[0]), aTime.Second);
                 }
             }
             else
